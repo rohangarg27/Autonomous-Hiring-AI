@@ -1,0 +1,161 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.formTitle {
+  font-size: 22px;
+  color: var(--clr-text-primary);
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Role selector */
+.roleSelector {
+  display: flex;
+  gap: 10px;
+}
+
+.roleBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: var(--clr-bg-card);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  color: var(--clr-text-secondary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.roleBtn:hover {
+  border-color: var(--clr-accent);
+  color: var(--clr-text-primary);
+  background: var(--clr-accent-dim);
+}
+
+.roleBtnActive {
+  background: var(--clr-accent-dim);
+  border-color: var(--clr-accent);
+  color: var(--clr-accent);
+  box-shadow: 0 0 12px rgba(0, 224, 199, 0.2);
+}
+
+/* Textarea */
+.textareaWrapper {
+  position: relative;
+}
+
+.textarea {
+  padding-bottom: 28px;
+}
+
+.charCount {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  font-size: 11px;
+  color: var(--clr-text-muted);
+  pointer-events: none;
+}
+
+.fieldError {
+  border-color: var(--clr-danger) !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12) !important;
+}
+
+.errorMsg {
+  font-size: 12px;
+  color: var(--clr-danger);
+  margin-top: 4px;
+}
+
+/* Skills */
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 32px;
+  align-items: center;
+}
+
+.skillTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  padding: 4px 10px 4px 14px;
+}
+
+.skillRemove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: rgba(0, 224, 199, 0.15);
+  border: none;
+  border-radius: 50%;
+  color: var(--clr-accent);
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  transition: background var(--transition-fast);
+}
+
+.skillRemove:hover {
+  background: rgba(239, 68, 68, 0.3);
+  color: var(--clr-danger);
+}
+
+.skillsPlaceholder {
+  font-size: 13px;
+  color: var(--clr-text-muted);
+  font-style: italic;
+}
+
+.skillInputRow {
+  display: flex;
+  gap: 10px;
+}
+
+.skillInputRow .form-input {
+  flex: 1;
+}
+
+/* Submit */
+.submitBtn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  margin-top: 4px;
+  animation: pulse-glow 3s ease infinite;
+}
