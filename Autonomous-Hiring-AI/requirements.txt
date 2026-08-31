@@ -1,0 +1,10 @@
+# existing deps
+sentence-transformers
+torch
+numpy
+pdfplumber
+
+# backend API
+fastapi
+uvicorn[standard]
+python-multipart
